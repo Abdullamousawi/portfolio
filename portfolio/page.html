@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ea5d5f1cec.js" crossorigin="anonymous"></script>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <center>
+            <div id="personal-details">
+                <img id="personal-image" src="assets/images/pfp.png">
+                <h2 id="full-name">FirstName LastName</h2>
+                <h4 id="occupation">Occupation</h4>
+                <h5 id="contact-info">
+                    <a href="mailto:hello@example.com">hello@example.com</a> | +966 501234567
+                </h5>
+                <h6 id="social-media">
+                    <a id="twitter-link" href="http://twitter.com/username" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                    <a id="instagram-link" href="http://instagram.com/username" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                    <a id="linkedin-link" href="http://linkedin.com/in/username" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    <a id="github-link" href="http://github.com/username" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                </h6>
+            </div>
+
+            <div id="grid-menu">
+                <div class="grid-cell" id="cell-1" onclick="toggleAppearance('projects-view', 'cell-1')">
+                    <i class="fa-solid fa-folder fa-2xl"></i>
+                    <h5>Projects</h5>
+                </div>
+                <div class="view" id="projects-view">
+                    <ul class="fa-ul">
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-folder fa-lg"></i></span>Project Number 1 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-folder fa-lg"></i></span>Project Number 2 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-folder fa-lg"></i></span>Project Number 3 - Something Interesting.</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-cell" id="cell-2" onclick="toggleAppearance('certificates-view', 'cell-2')">
+                    <i class="fa-solid fa-certificate fa-2xl"></i>
+                    <h5>Certificates</h5>
+                </div>
+                <div class="view" id="certificates-view">
+                    <ul class="fa-ul">
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>Certificate Number 1 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>Certificate Number 2 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>Certificate Number 3 - Something Interesting.</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-cell" id="cell-3" onclick="toggleAppearance('experience-view', 'cell-3')">
+                    <i class="fa-solid fa-brain fa-2xl"></i>
+                    <h5>Experience</h5>
+                </div>
+                <div class="view" id="experience-view">
+                    <ul class="fa-ul">
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-brain fa-lg"></i></span>Experience Number 1 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-brain fa-lg"></i></span>Experience Number 2 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-brain fa-lg"></i></span>Experience Number 3 - Something Interesting.</a></li>
+                    </ul>
+                </div>
+
+                <br>
+                <div class="grid-cell" id="cell-4" onclick="toggleAppearance('achievements-view', 'cell-4')">
+                    <i class="fa-solid fa-trophy fa-2xl"></i>
+                    <h5>Achievements</h5>
+                </div>
+                <div class="view" id="achievements-view">
+                    <ul class="fa-ul">
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-trophy fa-lg"></i></span>Achievements Number 1 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-trophy fa-lg"></i></span>Achievements Number 2 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-trophy fa-lg"></i></span>Achievements Number 3 - Something Interesting.</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-cell" id="cell-5" onclick="toggleAppearance('gallery-view', 'cell-5')">
+                    <i class="fa-solid fa-images fa-2xl"></i>
+                    <h5>Gallery</h5>
+                </div>
+                <div class="view" id="gallery-view">
+                        <img src="https://images.unsplash.com/photo-1658397966058-d1d252892754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"></li>
+                        <img src="https://images.unsplash.com/photo-1658412422237-f6e4100c1d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80"></li>
+                        <img src="https://images.unsplash.com/photo-1658359770124-380581c0073b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"></li>
+                </div>
+
+                <div class="grid-cell" id="cell-6" onclick="toggleAppearance('skills-view', 'cell-6')">
+                    <i class="fa-solid fa-star fa-2xl"></i>
+                    <h5>Skills</h5>
+                </div>
+                <div class="view" id="skills-view">
+                    <ul class="fa-ul">
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-star fa-lg"></i></span>Skill Number 1 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-star fa-lg"></i></span>Skill Number 2 - Something Interesting.</a></li>
+                        <li><a href="#" target="_blank"><span class="fa-li"><i class="fa-solid fa-star fa-lg"></i></span>Skill Number 3 - Something Interesting.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </center>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

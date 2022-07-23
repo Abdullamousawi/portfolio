@@ -1,0 +1,73 @@
+body {
+    background-color: #1d1d1d;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:aquamarine;
+}
+
+#social-media {
+    word-spacing: 16px;
+}
+#social-media a {
+    color: #ff0062;
+}
+#social-media a:hover {
+    color: white;
+}
+
+#personal-details {
+    padding-top: 50px;
+}
+#personal-details img {
+    min-width: 150px;
+    max-width: 15%;
+    border-radius: 500px;
+    border: dashed aquamarine 4px;
+}
+
+#grid-menu {
+    width: 100%;
+}
+.grid-cell {
+    width: 25%;
+    height: 120px;
+    background-color: aquamarine;
+    color: #1d1d1d;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 12px;
+    cursor:pointer;
+}
+
+.grid-cell i {
+    padding-top: 45px;
+}
+
+.view {
+    background-color: #414141;
+    width: 100%;
+    height: fit-content;
+    padding-top: 1px;
+    /*padding-bottom: 50%;*/
+    display: none;
+}
+
+.view li {
+    text-align: left;
+    padding: 15px 5px 15px 5px;
+}
+
+.view a {
+    color: white;
+}
+.view a:hover {
+    color: #ffd3d3;
+}
+
+#gallery-view img {
+    width: 100%;
+}
