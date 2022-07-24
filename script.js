@@ -73,6 +73,7 @@ function loadCertificates()
         presets[0]+'#'+presets[1]+'Cisco - IT Essentials (2021)'+presets[2],
         presets[0]+'#'+presets[1]+'Cisco - Linux Essentials (2021)'+presets[2],
         presets[0]+'#'+presets[1]+'Cisco - Networking Essentials (2022)'+presets[2],
+        presets[0]+'https://www.typing.com/apiv1/student/tests/206594028/133771923/certificate?language=en'+presets[1]+'Typing.com - 1 Minute Typing Test (2022)'+presets[2],
     ]
 
     items.forEach(item => {
@@ -142,6 +143,7 @@ function loadSkills()
         presets[0]+'#'+presets[1]+'Linux & Bash Shell'+presets[2],
         presets[0]+'#'+presets[1]+'Microsoft Excel, Word, and PowerPoint'+presets[2],
         presets[0]+'#'+presets[1]+'Graphic Design (Adobe XD, and Gravit Designer)'+presets[2],
+        presets[0]+'https://www.typing.com/apiv1/student/tests/206594028/133771923/certificate?language=en'+presets[1]+'Typing 60WPM (96% Accuracy) on a keyboard'+presets[2],
         presets[0]+'#'+presets[1]+'Algorithm Thinking & Problem Solving'+presets[2],
     ]
 
