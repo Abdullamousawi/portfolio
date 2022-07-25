@@ -32,6 +32,7 @@ a {
 #grid-menu {
     width: 100%;
 }
+
 .grid-cell {
     width: 25%;
     min-width: 120px;
@@ -43,11 +44,9 @@ a {
     border-radius: 12px;
     cursor:pointer;
 }
-
 .grid-cell i {
     padding-top: 45px;
 }
-
 .grid-cell h5 {
     width: min-content;
 }
@@ -59,12 +58,10 @@ a {
     padding-top: 1px;
     display: none;
 }
-
 .view li {
     text-align: left;
     padding: 15px 5px 15px 5px;
 }
-
 .view a {
     color: white;
 }
