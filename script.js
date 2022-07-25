@@ -27,8 +27,8 @@ function loadProfile(load)
     if (!load) return;
     
     document.getElementById("personal-image").src = "https://pbs.twimg.com/profile_images/1548890039047831554/DfRG8VMD_400x400.jpg";
-    document.getElementById("full-name").innerHTML = "Abdulla Mousawi";
-    document.getElementById("occupation").innerHTML = "Computer Scientist";
+    document.getElementById("full-name").innerHTML = "Abdullah Al-Mousawi";
+    document.getElementById("occupation").innerHTML = "CS Student & Game Developer";
     document.getElementById('contact-info').innerHTML = "<a href='mailto:abdullah982@pm.me'>abdullah982@pm.me</a>";
 
     var username = 'AbdullaMousawi';
@@ -120,9 +120,9 @@ function loadGallery()
     var list = document.getElementById("gallery-view");
     list.innerHTML = "";
     var items = [
-        'https://lh5.googleusercontent.com/qZIbqOXZrRLsqQ7NbBlt6f0XU4i_p6Nxd7AcnrWIqZgLXBiBwz3E4FRZX6ySRt0lLEp5JE5VoFkic25JtYNk=w2880-h1650-rw',
-        'https://lh3.googleusercontent.com/yi7qDT_V9gf-AyOSeSD37mHaZFn1F8ZdKeBqhSYV09cASnxWrkG3Xi8mww_iCpcigHKXqrkLSDoCg2xtxNX8=w2880-h1650-rw',
-        'https://lh3.googleusercontent.com/QVBt4LdmnllyvDhEhlOFEFgMJN5a7x055liJ4RuNDb0Mivc2Qix_gsIySmG2D6_T1IjTiPBVwTKOMOgaQkQ7=w2880-h1650-rw',
+        'assets/images/gallery/2019-charityRun-1.jpeg',
+        'assets/images/gallery/2019-charityRun-2.jpeg',
+        'assets/images/gallery/2019-charityRun-3.jpeg',
     ]
 
     items.forEach(item => {
