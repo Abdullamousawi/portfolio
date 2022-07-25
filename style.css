@@ -35,6 +35,7 @@ a {
 .grid-cell {
     width: 25%;
     max-height: 125px;
+    min-width: max-content;
     height: 120px;
     background-color: aquamarine;
     color: #1d1d1d;
