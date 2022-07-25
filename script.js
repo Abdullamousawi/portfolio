@@ -1,4 +1,5 @@
 loadProfile(true);
+var nolink = 'abdullamousawi.github.io/portfolio/';
 
 function toggleAppearance(viewId, cellId) {
     var viewElement = document.getElementById(viewId);
@@ -32,6 +33,7 @@ function loadProfile(load)
 
     var username = 'AbdullaMousawi';
     document.getElementById("twitter-link").href = 'http://twitter.com/' + username;
+    document.getElementById("instagram-link").style.display = "none";
     document.getElementById("instagram-link").href = 'http://instagram.com/' + username;
     document.getElementById("linkedin-link").href = 'http://linkedin.com/in/' + username;
     document.getElementById("github-link").href = 'http://github.com/' + username;
@@ -50,7 +52,7 @@ function loadProjects()
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-folder fa-lg"></i></span>', '</a>'];
     var items = [
-        presets[0]+'#'+presets[1]+'My Personal Portfolio - Web'+presets[2],
+        presets[0]+'abdullamousawi.github.io/portfolio/'+presets[1]+'My Personal Portfolio - Web'+presets[2],
         presets[0]+'hypedcloud.itch.io/rhombus'+presets[1]+'Rhombus - Video Game'+presets[2],
         presets[0]+'hypedcloud.itch.io/two-eyes'+presets[1]+'Two Eyes - Video Game'+presets[2],
         presets[0]+'hypedcloud.itch.io/one-click-away'+presets[1]+'One Click Away - Video Game'+presets[2],
@@ -70,10 +72,10 @@ function loadCertificates()
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>', '</a>'];
     var items = [
-        presets[0]+'#'+presets[1]+'Cisco - IT Essentials (2021)'+presets[2],
-        presets[0]+'#'+presets[1]+'Cisco - Linux Essentials (2021)'+presets[2],
-        presets[0]+'#'+presets[1]+'Cisco - Networking Essentials (2022)'+presets[2],
-        presets[0]+'https://www.typing.com/apiv1/student/tests/206594028/133771923/certificate?language=en'+presets[1]+'Typing.com - 1 Minute Typing Test (2022)'+presets[2],
+        presets[0]+nolink+presets[1]+'Cisco - IT Essentials (2021)'+presets[2],
+        presets[0]+nolink+presets[1]+'Cisco - Linux Essentials (2021)'+presets[2],
+        presets[0]+nolink+presets[1]+'Cisco - Networking Essentials (2022)'+presets[2],
+        presets[0]+'typing.com/student/verify#206594028-133771923'+presets[1]+'Typing.com - 1 Minute Typing Test (2022)'+presets[2],
     ]
 
     items.forEach(item => {
@@ -88,7 +90,7 @@ function loadExperience()
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-brain fa-lg"></i></span>', '</a>'];
     var items = [
-        presets[0]+'#'+presets[1]+'Saudi Aramco University Summer Internship Program (2022)'+presets[2],
+        presets[0]+nolink+presets[1]+'Saudi Aramco University Summer Internship Program (2022)'+presets[2],
     ]
 
     items.forEach(item => {
@@ -140,11 +142,11 @@ function loadSkills()
         presets[0]+'github.com/AbdullaMousawi'+presets[1]+'Web Programming & Design'+presets[2],
         presets[0]+'github.com/AbdullaMousawi'+presets[1]+'Game Design & Development (Unity Engine)'+presets[2],
         presets[0]+'github.com/AbdullaMousawi'+presets[1]+'.NET Core & Framework'+presets[2],
-        presets[0]+'#'+presets[1]+'Linux & Bash Shell'+presets[2],
-        presets[0]+'#'+presets[1]+'Microsoft Excel, Word, and PowerPoint'+presets[2],
-        presets[0]+'#'+presets[1]+'Graphic Design (Adobe XD, and Gravit Designer)'+presets[2],
-        presets[0]+'https://www.typing.com/apiv1/student/tests/206594028/133771923/certificate?language=en'+presets[1]+'Typing 60WPM (96% Accuracy) on a keyboard'+presets[2],
-        presets[0]+'#'+presets[1]+'Algorithm Thinking & Problem Solving'+presets[2],
+        presets[0]+nolink+presets[1]+'Linux & Bash Shell'+presets[2],
+        presets[0]+nolink+presets[1]+'Microsoft Excel, Word, and PowerPoint'+presets[2],
+        presets[0]+nolink+presets[1]+'Graphic Design (Adobe XD, and Gravit Designer)'+presets[2],
+        presets[0]+'typing.com/student/verify#206594028-133771923'+presets[1]+'Typing 60WPM (96% Accuracy) on a keyboard'+presets[2],
+        presets[0]+nolink+presets[1]+'Algorithm Thinking & Problem Solving'+presets[2],
     ]
 
     items.forEach(item => {
