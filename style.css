@@ -34,9 +34,9 @@ a {
 }
 .grid-cell {
     width: 25%;
-    max-height: 125px;
-    min-width: max-content;
-    height: 120px;
+    height: 0;
+    position: relative;
+    padding-bottom: 25%;
     background-color: aquamarine;
     color: #1d1d1d;
     display: inline-block;
@@ -49,9 +49,9 @@ a {
     padding-top: 45px;
 }
 
-.grid-cell h5 {
+/* .grid-cell h5 {
     font-size: 85%;
-}
+} */
 
 .view {
     background-color: #414141;
