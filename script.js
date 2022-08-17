@@ -74,9 +74,9 @@ function loadCertificates() {
         presets[0] + nolink + presets[1] + 'Cisco - Linux Essentials (2021)' + presets[2],
         presets[0] + nolink + presets[1] + 'Cisco - Networking Essentials (2022)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
-        presets + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)',
-        presets + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)',
-        presets + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)',
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)',
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)',
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)',
     ]
 
     items.forEach(item => {
@@ -146,14 +146,14 @@ function loadSkills() {
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-star fa-lg"></i></span>', '</a>'];
     var items = [
-        presets[0] + 'github.com/AbdullaMousawi' + presets[1] + 'Object Oriented Programming Languages' + presets[2],
-        presets[0] + 'github.com/AbdullaMousawi' + presets[1] + 'Database Management (SQL)' + presets[2],
-        presets[0] + 'github.com/AbdullaMousawi' + presets[1] + 'Web Programming & Design' + presets[2],
-        presets[0] + 'github.com/AbdullaMousawi' + presets[1] + 'Game Design & Development (Unity Engine)' + presets[2],
-        presets[0] + 'github.com/AbdullaMousawi' + presets[1] + '.NET Core & Framework' + presets[2],
+        presets[0] + nolink + presets[1] + 'Object Oriented Programming Languages' + presets[2],
+        presets[0] + nolink + presets[1] + 'Database Management (SQL)' + presets[2],
+        presets[0] + nolink + presets[1] + 'Web Programming & Design' + presets[2],
+        presets[0] + nolink + presets[1] + 'Game Design & Development (Unity Engine)' + presets[2],
+        presets[0] + nolink + presets[1] + '.NET Core & Framework' + presets[2],
         presets[0] + nolink + presets[1] + 'Linux & Bash Shell' + presets[2],
         presets[0] + nolink + presets[1] + 'Microsoft Excel, Word, PowerPoint, and Power BI' + presets[2],
-        presets[0] + nolink + presets[1] + 'Graphic Design (Adobe XD, and Gravit Designer)' + presets[2],
+        presets[0] + nolink + presets[1] + 'Graphic Design (Adobe XD, and Corel Vector)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing 60WPM (96% Accuracy) on a keyboard' + presets[2],
         presets[0] + nolink + presets[1] + 'Algorithm Thinking & Problem Solving' + presets[2],
     ]
