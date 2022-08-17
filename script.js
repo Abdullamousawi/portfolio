@@ -74,6 +74,9 @@ function loadCertificates() {
         presets[0] + nolink + presets[1] + 'Cisco - Linux Essentials (2021)' + presets[2],
         presets[0] + nolink + presets[1] + 'Cisco - Networking Essentials (2022)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
+        presets + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)',
+        presets + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)',
+        presets + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)',
     ]
 
     items.forEach(item => {
