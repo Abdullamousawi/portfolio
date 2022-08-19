@@ -77,9 +77,9 @@
                     <h5>Gallery</h5>
                 </div>
                 <div class="view" id="gallery-view">
-                        <img src="https://images.unsplash.com/photo-1658397966058-d1d252892754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"></li>
-                        <img src="https://images.unsplash.com/photo-1658412422237-f6e4100c1d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80"></li>
-                        <img src="https://images.unsplash.com/photo-1658359770124-380581c0073b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"></li>
+                        <img id="gellery-image" onclick="showModal(this)" src="https://images.unsplash.com/photo-1658397966058-d1d252892754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"></li>
+                        <img id="gellery-image" onclick="showModal(this)" src="https://images.unsplash.com/photo-1658412422237-f6e4100c1d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80"></li>
+                        <img id="gellery-image" onclick="showModal(this)" src="https://images.unsplash.com/photo-1658359770124-380581c0073b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"></li>
                 </div>
 
                 <div class="grid-cell" id="cell-6" onclick="toggleAppearance('skills-view', 'cell-6'), loadSkills()">
@@ -103,6 +103,12 @@
                 <p>Portfolio QR Code</p>
             </div>
         </center>
+
+        <div id="image-modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-image" class="modal-content" src="">
+            <div id="modal-caption"></div>
+        </div>
 
         <script type="text/javascript" src="script.js"></script>
     </body>

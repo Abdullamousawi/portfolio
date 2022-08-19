@@ -1,3 +1,4 @@
+//#region Personal Profile Loader
 var load = true;
 loadProfile(load);
 var loadedProjects, loadedCertificates, loadedExperience, loadedAchievements, loadedGallery, loadedSkills;
@@ -77,6 +78,7 @@ function loadCertificates() {
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)',
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)',
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)',
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Team Creation (2022)',
     ]
 
     items.forEach(item => {
@@ -126,16 +128,21 @@ function loadGallery() {
 
     var list = document.getElementById("gallery-view");
     list.innerHTML = "";
+    altTextTag = '?alt';
     var items = [
-        'assets/images/gallery/2019-charityRun-1.jpeg',
-        'assets/images/gallery/2019-charityRun-2.jpeg',
-        'assets/images/gallery/2019-charityRun-3.jpeg',
+        'assets/images/gallery/2019-charityRun-1.jpeg' + altTextTag + 'Annual Charity Run (2019)',
+        'assets/images/gallery/2019-charityRun-2.jpeg' + altTextTag + 'Annual Charity Run (2019)',
+        'assets/images/gallery/2019-charityRun-3.jpeg' + altTextTag + 'Annual Charity Run (2019)',
     ]
 
     items.forEach(item => {
         var img = document.createElement("img");
-        img.src = item;
+        img.id = "gellery-image";
+        attributes = item.split(altTextTag);
+        img.src = attributes[0];
+        img.alt = attributes[1];
         list.appendChild(img);
+        img.onclick = function() { showModal(img); };
     });
 }
 function loadSkills() {
@@ -164,3 +171,31 @@ function loadSkills() {
         list.appendChild(li);
     });
 }
+//#endregion
+
+//#region Gallery Images Modal
+var modal = document.getElementById("image-modal");
+var modalImage = document.getElementById("modal-image");
+var modalCaptionText = document.getElementById("modal-caption");
+
+document.addEventListener("click", (e) => {
+    const elem = e.target;
+    if (elem.id === "gallery-image") {
+        alert("Test");
+        modal.style.display = "block";
+        modalImage.src = elem.dataset.biggerSrc || elem.src;
+        modalCaptionText.innerHTML = elem.alt;
+    }
+});
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = modal.onclick = function() { hideModal() };
+
+function showModal(selectedImage) {
+    modal.style.display = "block";
+    modalImage.src = selectedImage.dataset.biggerSrc || selectedImage.src;
+    modalCaptionText.innerHTML = selectedImage.alt;
+};
+function hideModal() { modal.style.display = "none"; };
+//#endregion
