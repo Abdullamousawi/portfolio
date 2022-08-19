@@ -22,9 +22,9 @@ a {
 #personal-details {
     padding-top: 35px;
 }
-#personal-details img {
+#personal-details #personal-image {
     min-width: 150px;
-    max-width: 15%;
+    max-width: 10%;
     border-radius: 500px;
     border: dashed aquamarine 4px;
 }
