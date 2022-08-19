@@ -95,7 +95,7 @@ a {
 }
 #qrcode img {
     width: 25%;
-    max-width: 300px;
+    max-width: 120px;
 }
 #qrcode p {
     width: 25%;
