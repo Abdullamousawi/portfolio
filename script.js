@@ -4,27 +4,6 @@ loadProfile(load);
 var loadedProjects, loadedCertificates, loadedExperience, loadedAchievements, loadedGallery, loadedSkills;
 var nolink = 'abdullamousawi.github.io/portfolio/';
 
-function toggleAppearance(viewId, cellId) {
-    var viewElement = document.getElementById(viewId);
-    var cellElement = document.getElementById(cellId);
-
-    cellElement.style.width = (cellElement.style.width != "100%" ? "100%" : "25%");
-    cellElement.style.borderRadius = (cellElement.style.width == "100%" ? "0" : "12px");
-    cellElement.style.margin = (cellElement.style.width == "100%" ? "0" : "5px");
-
-    viewElement.style.display = (viewElement.style.display != "block" ? "block" : "none");
-
-    for (let i = 1; i <= 6; i++) {
-        var cell = "cell-" + i;
-        var celment = document.getElementById(cell);
-
-        if (viewElement.style.display == "block" && cell != cellId)
-            celment.style.display = "none";
-        else
-            celment.style.display = "inline-block";
-    }
-}
-
 function loadProfile(load) {
     if (!load) return;
 
@@ -173,7 +152,38 @@ function loadSkills() {
 }
 //#endregion
 
-//#region Gallery Images Modal
+//#region Page Functionalities
+
+//--- Lists appearance toggeling
+function toggleAppearance(viewId, cellId) {
+    var viewElement = document.getElementById(viewId);
+    var cellElement = document.getElementById(cellId);
+
+    cellElement.style.width = (cellElement.style.width != "100%" ? "100%" : "25%");
+    
+    cellElement.style.borderRadius = (cellElement.style.width == "100%" ? "0" : "12px");
+    if (cellElement.style.width == "100%")
+    {
+        cellElement.style.borderTopLeftRadius = "12px";
+        cellElement.style.borderTopRightRadius = "12px";
+    }
+
+    cellElement.style.margin = (cellElement.style.width == "100%" ? "0" : "5px");
+
+    viewElement.style.display = (viewElement.style.display != "block" ? "block" : "none");
+
+    for (let i = 1; i <= 6; i++) {
+        var cell = "cell-" + i;
+        var celment = document.getElementById(cell);
+
+        if (viewElement.style.display == "block" && cell != cellId)
+            celment.style.display = "none";
+        else
+            celment.style.display = "inline-block";
+    }
+}
+
+//--- Gallery Images Modal
 var modal = document.getElementById("image-modal");
 var modalImage = document.getElementById("modal-image");
 var modalCaptionText = document.getElementById("modal-caption");

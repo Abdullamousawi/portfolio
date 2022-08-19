@@ -63,8 +63,17 @@ a {
     max-width: 960px;
     height: fit-content;
     padding-top: 1px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     display: none;
 }
+
+#gallery-view {
+    /*This is to prevent the gallery list from having rounded bottom corners unlike the other lists*/
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .view li {
     text-align: left;
     padding: 15px 5px 15px 5px;
