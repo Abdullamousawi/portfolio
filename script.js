@@ -58,6 +58,7 @@ function loadCertificates() {
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)',
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)',
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Team Creation (2022)',
+        presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco - University Internship Program (2022)',
     ]
 
     items.forEach(item => {
@@ -74,7 +75,7 @@ function loadExperience() {
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-brain fa-lg"></i></span>', '</a>'];
     var items = [
-        presets[0] + nolink + presets[1] + 'Saudi Aramco University Summer Internship Program (2022)' + presets[2],
+        presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco University Internship Program (June 20, 2022 - August 25, 2022)' + presets[2],
     ]
 
     items.forEach(item => {
