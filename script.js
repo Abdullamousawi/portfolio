@@ -7,7 +7,7 @@ var nolink = 'abdullamousawi.github.io/portfolio/';
 function loadProfile(load) {
     if (!load) return;
 
-    document.getElementById("personal-image").src = "https://pbs.twimg.com/profile_images/1548890039047831554/DfRG8VMD_400x400.jpg";
+    document.getElementById("personal-image").src = "https://pbs.twimg.com/profile_images/1571236186072440832/N8QWVVXO_400x400.jpg";
     document.getElementById("full-name").innerHTML = "Abdullah Al-Mousawi";
     document.getElementById("occupation").innerHTML = "CS Student & Game Developer";
     document.getElementById('contact-info').innerHTML = "<a href='mailto:abdullah982@pm.me'>abdullah982@pm.me</a>";
