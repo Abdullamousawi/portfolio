@@ -32,8 +32,9 @@ function loadProjects() {
         presets[0] + 'hypedcloud.itch.io/rhombus' + presets[1] + 'Rhombus - Video Game' + presets[2],
         presets[0] + 'hypedcloud.itch.io/two-eyes' + presets[1] + 'Two Eyes - Video Game' + presets[2],
         presets[0] + 'hypedcloud.itch.io/one-click-away' + presets[1] + 'One Click Away - Video Game' + presets[2],
-        presets[0] + 'play.google.com/store/apps/details?id=com.MousawiDev.Horizontal' + presets[1] + 'Horizontal - Video Game' + presets[2],
-        presets[0] + 'play.google.com/store/apps/details?id=com.MousawiDev.Vertical' + presets[1] + 'Vertical - Video Game' + presets[2],
+        presets[0] + 'play.google.com/store/apps/details?id=com.MousawiDev.Horizontal' + presets[1] + 'Horizontal - Video Game (Mobile)' + presets[2],
+        presets[0] + 'play.google.com/store/apps/details?id=com.MousawiDev.Vertical' + presets[1] + 'Vertical - Video Game (Mobile)' + presets[2],
+        presets[0] + nolink + presets[1] + 'CS Coach - Video Game (Educational)' + presets[2],
     ]
 
     items.forEach(item => {
@@ -53,6 +54,8 @@ function loadCertificates() {
         presets[0] + nolink + presets[1] + 'Cisco - IT Essentials (2021)' + presets[2],
         presets[0] + nolink + presets[1] + 'Cisco - Linux Essentials (2021)' + presets[2],
         presets[0] + nolink + presets[1] + 'Cisco - Networking Essentials (2022)' + presets[2],
+        presets[0] + nolink + presets[1] + 'Cisco - Cybersecurity Essentials (2023)' + presets[2],
+        presets[0] + nolink + presets[1] + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)',
         presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)',
@@ -94,6 +97,7 @@ function loadAchievements() {
     var items = [
         presets[0] + 'charity-run.com/results-2019/' + presets[1] + 'Participated in the Annual Charity Run (2019)' + presets[2],
         presets[0] + 'itch.io/jam/brackeys-4/rate/721935' + presets[1] + 'Brackeys Game Jam 2020 - 6th Place in Game Design Carteria' + presets[2],
+        presets[0] + nolink + presets[1] + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
     ]
 
     items.forEach(item => {
