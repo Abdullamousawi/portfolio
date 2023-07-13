@@ -9,8 +9,8 @@ function loadProfile(load) {
 
     document.getElementById("personal-image").src = "https://pbs.twimg.com/profile_images/1571236186072440832/N8QWVVXO_400x400.jpg";
     document.getElementById("full-name").innerHTML = "Abdullah Al-Mousawi";
-    document.getElementById("occupation").innerHTML = "CS Student & Game Developer";
-    document.getElementById('contact-info').innerHTML = "<a href='mailto:abdullah982@pm.me'>abdullah982@pm.me</a>";
+    document.getElementById("occupation").innerHTML = "Computer Scientist";
+    document.getElementById('contact-info').innerHTML = "<a href='mailto:mr.abdullahalmousawi@gmail.com'>mr.abdullahalmousawi@gmail.com</a>";
 
     var username = 'AbdullaMousawi';
     document.getElementById("twitter-link").href = 'http://twitter.com/' + username;
@@ -144,7 +144,7 @@ function loadSkills() {
         presets[0] + nolink + presets[1] + '.NET Core & Framework' + presets[2],
         presets[0] + nolink + presets[1] + 'Linux & Bash Shell' + presets[2],
         presets[0] + nolink + presets[1] + 'Microsoft Excel, Word, PowerPoint, and Power BI' + presets[2],
-        presets[0] + nolink + presets[1] + 'Graphic Design (Adobe XD, and Corel Vector)' + presets[2],
+        presets[0] + nolink + presets[1] + 'Graphic Design (Figma and Corel Vector)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing 60WPM (96% Accuracy) on a keyboard' + presets[2],
         presets[0] + nolink + presets[1] + 'Algorithm Thinking & Problem Solving' + presets[2],
     ]
