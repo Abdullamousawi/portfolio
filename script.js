@@ -2,7 +2,7 @@
 var load = true;
 loadProfile(load);
 var loadedProjects, loadedCertificates, loadedExperience, loadedAchievements, loadedGallery, loadedSkills;
-var nolink = 'abdullamousawi.github.io/portfolio/';
+var nolink = '#';
 
 function loadProfile(load) {
     if (!load) return;
@@ -28,13 +28,13 @@ function loadProjects() {
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-folder fa-lg"></i></span>', '</a>'];
     var items = [
-        presets[0] + 'abdullamousawi.github.io/portfolio/' + presets[1] + 'My Personal Portfolio - Web' + presets[2],
-        presets[0] + 'hypedcloud.itch.io/rhombus' + presets[1] + 'Rhombus - Video Game' + presets[2],
-        presets[0] + 'hypedcloud.itch.io/two-eyes' + presets[1] + 'Two Eyes - Video Game' + presets[2],
-        presets[0] + 'hypedcloud.itch.io/one-click-away' + presets[1] + 'One Click Away - Video Game' + presets[2],
-        presets[0] + 'play.google.com/store/apps/details?id=com.MousawiDev.Horizontal' + presets[1] + 'Horizontal - Video Game (Mobile)' + presets[2],
-        presets[0] + 'play.google.com/store/apps/details?id=com.MousawiDev.Vertical' + presets[1] + 'Vertical - Video Game (Mobile)' + presets[2],
-        presets[0] + nolink + presets[1] + 'CS Coach - Video Game (Educational)' + presets[2],
+        presets[0] + 'abdullamousawi.github.io/portfolio/' + presets[1] + 'My Personal Portfolio - Web (This)' + presets[2],
+        presets[0] + 'hypedcloud.itch.io/rhombus' + presets[1] + 'Rhombus - Video Game (Game Jam)' + presets[2],
+        presets[0] + 'hypedcloud.itch.io/two-eyes' + presets[1] + 'Two Eyes - Video Game Prototype (Game Jam)' + presets[2],
+        presets[0] + 'https://play.google.com/store/apps/details?id=com.HypedCloud.TwoEyes' + presets[1] + 'Two Eyes - Video Game (Android)' + presets[2],
+        presets[0] + 'https://apps.apple.com/us/app/two-eyes-game/id6462434578' + presets[1] + 'Two Eyes - Video Game (iOS)' + presets[2],
+        presets[0] + 'hypedcloud.itch.io/one-click-away' + presets[1] + 'One Click Away - Video Game (Game Jam)' + presets[2],
+        presets[0] + nolink + presets[1] + 'CS Coach - Video Game (Senior Project)' + presets[2],
     ]
 
     items.forEach(item => {
@@ -55,13 +55,14 @@ function loadCertificates() {
         presets[0] + nolink + presets[1] + 'Cisco - Linux Essentials (2021)' + presets[2],
         presets[0] + nolink + presets[1] + 'Cisco - Networking Essentials (2022)' + presets[2],
         presets[0] + nolink + presets[1] + 'Cisco - Cybersecurity Essentials (2023)' + presets[2],
+        presets[0] + 'udemy.com/certificate/UC-6425ab77-a05b-4843-8452-86978cfa66e3/' + presets[1] + 'Udemy - C# Advanced Topics: Prepare for Technical Interviews (2023)' + presets[2],
         presets[0] + nolink + presets[1] + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)',
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)',
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)',
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Team Creation (2022)',
-        presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco - University Internship Program (2022)',
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)' + presets[2],
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)' + presets[2],
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)' + presets[2],
+        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Team Creation (2022)' + presets[2],
+        presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco - University Internship Program (2022)' + presets[2],
     ]
 
     items.forEach(item => {
