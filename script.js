@@ -2,7 +2,6 @@
 var load = true;
 loadProfile(load);
 var loadedProjects, loadedCertificates, loadedExperience, loadedAchievements, loadedGallery, loadedSkills;
-var nolink = '#';
 
 function loadProfile(load) {
     if (!load) return;
@@ -27,6 +26,7 @@ function loadProjects() {
     var list = document.getElementById("projects-view").getElementsByTagName("ul")[0];
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-folder fa-lg"></i></span>', '</a>'];
+    var nolink = '<a href="#"><span class="fa-li"><i class="fa-solid fa-folder fa-lg"></i></span>'
     var items = [
         presets[0] + 'abdullamousawi.github.io/portfolio/' + presets[1] + 'My Personal Portfolio - Web (This)' + presets[2],
         presets[0] + 'hypedcloud.itch.io/rhombus' + presets[1] + 'Rhombus - Video Game (Game Jam)' + presets[2],
@@ -34,7 +34,7 @@ function loadProjects() {
         presets[0] + 'https://play.google.com/store/apps/details?id=com.HypedCloud.TwoEyes' + presets[1] + 'Two Eyes - Video Game (Android)' + presets[2],
         presets[0] + 'https://apps.apple.com/us/app/two-eyes-game/id6462434578' + presets[1] + 'Two Eyes - Video Game (iOS)' + presets[2],
         presets[0] + 'hypedcloud.itch.io/one-click-away' + presets[1] + 'One Click Away - Video Game (Game Jam)' + presets[2],
-        presets[0] + nolink + presets[1] + 'CS Coach - Video Game (Senior Project)' + presets[2],
+        nolink + 'CS Coach - Video Game (Senior Project)' + presets[2],
     ]
 
     items.forEach(item => {
@@ -50,19 +50,20 @@ function loadCertificates() {
     var list = document.getElementById("certificates-view").getElementsByTagName("ul")[0];
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>', '</a>'];
+    var nolink = '<a href="#"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>'
     var items = [
-        presets[0] + nolink + presets[1] + 'Cisco - IT Essentials (2021)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Cisco - Linux Essentials (2021)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Cisco - Networking Essentials (2022)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Cisco - Cybersecurity Essentials (2023)' + presets[2],
         presets[0] + 'udemy.com/certificate/UC-6425ab77-a05b-4843-8452-86978cfa66e3/' + presets[1] + 'Udemy - C# Advanced Topics: Prepare for Technical Interviews (2023)' + presets[2],
-        presets[0] + nolink + presets[1] + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
-        presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Business Plan Development (2022)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Strategic Thinking (2022)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Project Management (2022)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Harvard ManageMentor - Team Creation (2022)' + presets[2],
         presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco - University Internship Program (2022)' + presets[2],
+        presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
+        presets[0] + 'linkedin.com/posts/abdullamousawi_%D8%A7%D9%84%D8%AD%D9%85%D8%AF%D9%84%D9%84%D9%87-our-senior-project-cs-coach-activity-7069977471630155776-tQDX?utm_source=share&utm_medium=member_desktop' + presets[1] + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
+        nolink + 'Cisco - IT Essentials (2021)' + presets[2],
+        nolink + 'Cisco - Linux Essentials (2021)' + presets[2],
+        nolink + 'Cisco - Networking Essentials (2022)' + presets[2],
+        nolink + 'Cisco - Cybersecurity Essentials (2023)' + presets[2],
+        nolink + 'Harvard ManageMentor - Business Plan Development (2022)' + presets[2],
+        nolink + 'Harvard ManageMentor - Strategic Thinking (2022)' + presets[2],
+        nolink + 'Harvard ManageMentor - Project Management (2022)' + presets[2],
+        nolink + 'Harvard ManageMentor - Team Creation (2022)' + presets[2],
     ]
 
     items.forEach(item => {
@@ -78,6 +79,7 @@ function loadExperience() {
     var list = document.getElementById("experience-view").getElementsByTagName("ul")[0];
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-brain fa-lg"></i></span>', '</a>'];
+    var nolink = '<a href="#"><span class="fa-li"><i class="fa-solid fa-brain fa-lg"></i></span>'
     var items = [
         presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco University Internship Program (June 20, 2022 - August 25, 2022)' + presets[2],
     ]
@@ -95,10 +97,11 @@ function loadAchievements() {
     var list = document.getElementById("achievements-view").getElementsByTagName("ul")[0];
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-trophy fa-lg"></i></span>', '</a>'];
+    var nolink = '<a href="#"><span class="fa-li"><i class="fa-solid fa-trophy fa-lg"></i></span>'
     var items = [
         presets[0] + 'charity-run.com/results-2019/' + presets[1] + 'Participated in the Annual Charity Run (2019)' + presets[2],
         presets[0] + 'itch.io/jam/brackeys-4/rate/721935' + presets[1] + 'Brackeys Game Jam 2020 - 6th Place in Game Design Carteria' + presets[2],
-        presets[0] + nolink + presets[1] + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
+        nolink + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
     ]
 
     items.forEach(item => {
@@ -137,17 +140,18 @@ function loadSkills() {
     var list = document.getElementById("skills-view").getElementsByTagName("ul")[0];
     list.innerHTML = "";
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-star fa-lg"></i></span>', '</a>'];
+    var nolink = '<a href="#"><span class="fa-li"><i class="fa-solid fa-star fa-lg"></i></span>'
     var items = [
-        presets[0] + nolink + presets[1] + 'Object Oriented Programming Languages' + presets[2],
-        presets[0] + nolink + presets[1] + 'Database Management (SQL)' + presets[2],
-        presets[0] + nolink + presets[1] + 'Web Programming & Design' + presets[2],
-        presets[0] + nolink + presets[1] + 'Game Design & Development (Unity Engine)' + presets[2],
-        presets[0] + nolink + presets[1] + '.NET Core & Framework' + presets[2],
-        presets[0] + nolink + presets[1] + 'Linux & Bash Shell' + presets[2],
-        presets[0] + nolink + presets[1] + 'Microsoft Excel, Word, PowerPoint, and Power BI' + presets[2],
-        presets[0] + nolink + presets[1] + 'Graphic Design (Figma and Corel Vector)' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + 'Database Management (SQL)' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + 'Web Programming & Design' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + 'Game Design & Development (Unity Engine)' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + '.NET Core & Framework' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + 'Linux & Bash Shell' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + 'Microsoft Excel, Word, PowerPoint, and Power BI' + presets[2],
+        nolink + 'Object Oriented Programming Languages' + 'Graphic Design (Figma and Corel Vector)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing 60WPM (96% Accuracy) on a keyboard' + presets[2],
-        presets[0] + nolink + presets[1] + 'Algorithm Thinking & Problem Solving' + presets[2],
+        nolink + 'Algorithm Thinking & Problem Solving' + presets[2],
     ]
 
     items.forEach(item => {
@@ -160,7 +164,7 @@ function loadSkills() {
 
 //#region Page Functionalities
 
-//--- Lists appearance toggeling
+//--- Lists appearance toggling
 function toggleAppearance(viewId, cellId) {
     var viewElement = document.getElementById(viewId);
     var cellElement = document.getElementById(cellId);
