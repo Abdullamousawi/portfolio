@@ -31,8 +31,8 @@ function loadProjects() {
         presets[0] + 'abdullamousawi.github.io/portfolio/' + presets[1] + 'My Personal Portfolio - Web (This)' + presets[2],
         presets[0] + 'hypedcloud.itch.io/rhombus' + presets[1] + 'Rhombus - Video Game (Game Jam)' + presets[2],
         presets[0] + 'hypedcloud.itch.io/two-eyes' + presets[1] + 'Two Eyes - Video Game Prototype (Game Jam)' + presets[2],
-        presets[0] + 'https://play.google.com/store/apps/details?id=com.HypedCloud.TwoEyes' + presets[1] + 'Two Eyes - Video Game (Android)' + presets[2],
-        presets[0] + 'https://apps.apple.com/us/app/two-eyes-game/id6462434578' + presets[1] + 'Two Eyes - Video Game (iOS)' + presets[2],
+        presets[0] + 'play.google.com/store/apps/details?id=com.HypedCloud.TwoEyes' + presets[1] + 'Two Eyes - Video Game (Android)' + presets[2],
+        presets[0] + 'apps.apple.com/us/app/two-eyes-game/id6462434578' + presets[1] + 'Two Eyes - Video Game (iOS)' + presets[2],
         presets[0] + 'hypedcloud.itch.io/one-click-away' + presets[1] + 'One Click Away - Video Game (Game Jam)' + presets[2],
         nolink + 'CS Coach - Video Game (Senior Project)' + presets[2],
     ]
