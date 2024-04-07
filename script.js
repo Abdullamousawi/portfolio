@@ -13,7 +13,7 @@ function loadProfile(load) {
 
     var username = 'AbdullaMousawi';
     document.getElementById("twitter-link").href = 'http://twitter.com/' + username;
-    document.getElementById("instagram-link").style.display = "none";
+    /*document.getElementById("instagram-link").style.display = "none";*/
     document.getElementById("instagram-link").href = 'http://instagram.com/' + username;
     document.getElementById("linkedin-link").href = 'http://linkedin.com/in/' + username;
     document.getElementById("github-link").href = 'http://github.com/' + username;
@@ -52,18 +52,19 @@ function loadCertificates() {
     var presets = ['<a href="http://', '" target="_blank"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>', '</a>'];
     var nolink = '<a href="#"><span class="fa-li"><i class="fa-solid fa-certificate fa-lg"></i></span>'
     var items = [
+        presets[0] + 'udemy.com/certificate/UC-83864e8e-5e94-4024-be96-5d01dcb9eb14/' + presets[1] + 'Udemy - Data Analysis | SQL,Tableau,Power BI & Excel | Real Projects (2024)' + presets[2],
         presets[0] + 'udemy.com/certificate/UC-6425ab77-a05b-4843-8452-86978cfa66e3/' + presets[1] + 'Udemy - C# Advanced Topics: Prepare for Technical Interviews (2023)' + presets[2],
-        presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco - University Internship Program (2022)' + presets[2],
-        presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
         presets[0] + 'linkedin.com/posts/abdullamousawi_%D8%A7%D9%84%D8%AD%D9%85%D8%AF%D9%84%D9%84%D9%87-our-senior-project-cs-coach-activity-7069977471630155776-tQDX?utm_source=share&utm_medium=member_desktop' + presets[1] + 'PMU CCES Senior Project - #1 Software Project Winner (2023)' + presets[2],
+        presets[0] + 'linkedin.com/in/abdullamousawi/overlay/1635500353415/single-media-viewer/' + presets[1] + 'Saudi Aramco - University Internship Program (2022)' + presets[2],
+        nolink + 'Cisco - Cybersecurity Essentials (2023)' + presets[2],
+        nolink + 'Cisco - Networking Essentials (2022)' + presets[2],
+        presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing.com - 1 Minute Typing Test (2022)' + presets[2],
         nolink + 'Cisco - IT Essentials (2021)' + presets[2],
         nolink + 'Cisco - Linux Essentials (2021)' + presets[2],
-        nolink + 'Cisco - Networking Essentials (2022)' + presets[2],
-        nolink + 'Cisco - Cybersecurity Essentials (2023)' + presets[2],
-        nolink + 'Harvard ManageMentor - Business Plan Development (2022)' + presets[2],
-        nolink + 'Harvard ManageMentor - Strategic Thinking (2022)' + presets[2],
-        nolink + 'Harvard ManageMentor - Project Management (2022)' + presets[2],
-        nolink + 'Harvard ManageMentor - Team Creation (2022)' + presets[2],
+        // nolink + 'Harvard ManageMentor - Business Plan Development (2022)' + presets[2],
+        // nolink + 'Harvard ManageMentor - Strategic Thinking (2022)' + presets[2],
+        // nolink + 'Harvard ManageMentor - Project Management (2022)' + presets[2],
+        // nolink + 'Harvard ManageMentor - Team Creation (2022)' + presets[2],
     ]
 
     items.forEach(item => {
@@ -143,13 +144,13 @@ function loadSkills() {
     var nolink = '<a href="#"><span class="fa-li"><i class="fa-solid fa-star fa-lg"></i></span>'
     var items = [
         nolink + 'Object Oriented Programming Languages' + presets[2],
-        nolink + 'Object Oriented Programming Languages' + 'Database Management (SQL)' + presets[2],
-        nolink + 'Object Oriented Programming Languages' + 'Web Programming & Design' + presets[2],
-        nolink + 'Object Oriented Programming Languages' + 'Game Design & Development (Unity Engine)' + presets[2],
-        nolink + 'Object Oriented Programming Languages' + '.NET Core & Framework' + presets[2],
-        nolink + 'Object Oriented Programming Languages' + 'Linux & Bash Shell' + presets[2],
-        nolink + 'Object Oriented Programming Languages' + 'Microsoft Excel, Word, PowerPoint, and Power BI' + presets[2],
-        nolink + 'Object Oriented Programming Languages' + 'Graphic Design (Figma and Corel Vector)' + presets[2],
+        nolink + 'Database Management (SQL)' + presets[2],
+        nolink + 'Web Programming & Design' + presets[2],
+        nolink + 'Game Design & Development (Unity Engine)' + presets[2],
+        nolink + '.NET Core & Framework' + presets[2],
+        nolink + 'Linux & Bash Shell' + presets[2],
+        nolink + 'Microsoft Excel, Word, PowerPoint, and Power BI' + presets[2],
+        nolink + 'Graphic Design (Figma and Corel Vector)' + presets[2],
         presets[0] + 'typing.com/student/verify#206594028-133771923' + presets[1] + 'Typing 60WPM (96% Accuracy) on a keyboard' + presets[2],
         nolink + 'Algorithm Thinking & Problem Solving' + presets[2],
     ]
